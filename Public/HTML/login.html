@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suprema - Shop 'fo You Die</title>
+    <link rel="icon" type="image/x-icon" href="../img/Icons/favicon.png">
+    <link rel="stylesheet" href="../CSS/utils.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="stylesheet" type="text/css" href="//use.fontawesome.com/releases/v5.7.2/css/all.css">
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="logo">
+            <a href="/index.html">
+                <img src="../img/logo.png" alt="Suprema">
+            </a>
+        </div>
+        <div class="nav-items">
+            <ul id="nav-items-ul">
+                <li><a class="bottom-line" href="/index.html">Home</a></li>
+                <li><a class="bottom-line" href="../HTML/products.html">Products</a></li>
+                <li><a class="bottom-line" href="/index.html#categories">Categories</a></li>
+                <li><a class="bottom-line" href="../HTML/about.html">About</a></li>
+                <li><a class="bottom-line" href="../HTML/contact.html">Contact</a></li>
+                <li><a class="bottom-line nav-active" href="#">Login</a></li>
+                <li id="theme-img"><img src="../img/Icons/theme.svg" alt="Change Theme"></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="content">
+        <div class="content-desc">
+            <h1 class="content-text text-h1">Login / Register </h1>
+        </div>
+
+    </div>
+
+    <div class="login-register">
+        <div class="login-form-content">
+            <h2 class="wrapper-a login-text">
+                Login </h2>
+            <div class="login-form">
+                <form action="/api/v1/auth/login" method="post">
+                    <input type="text" class="form-control" placeholder="Username or Email" id="login_email"
+                        name="login_email">
+                    <input type="password" class="form-control" placeholder="Password" id="login_password"
+                        name="login_password">
+
+                    <input type="submit" value="login" class="sqaure-btn submit-btn" id="login-submit">
+                    <a href="" class="pink-hover lost-password">Lost Your Password?</a>
+
+                    <label for="rememberme" class="remember-me" id="remembermeContent">
+                        <input name="rememberme" type="checkbox" id="rememberme" value="forever">
+                        <span class="remember-me-text">Remember Me</span>
+                    </label>
+                </form>
+            </div>
+        </div>
+        <div class="register-form-content">
+            <h2 class="wrapper-a login-text">
+                Register </h2>
+            <div class="register-form">
+                <form action="/api/v1/auth/register" method="post">
+                    <input type="text" class="form-control" placeholder="Username or Email" id="register_email"
+                        name="register_email">
+                    <input type="password" class="form-control" placeholder="Password" id="register_password"
+                        name="register_password">
+                    <input type="submit" value="Register" class="sqaure-btn submit-btn" id="register-submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="../JS/script.js"></script>
+    <script src="../JS/login.js"></script>
+
+</body>
+
+</html>

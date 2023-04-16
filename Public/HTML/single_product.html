@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suprema - Shop 'fo You Die</title>
+    <link rel="icon" type="image/x-icon" href="../img/Icons/favicon.png">
+    <link rel="stylesheet" href="../CSS/utils.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/single_product.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="logo">
+            <a href="/index.html">
+                <img src="../img/logo.png" alt="Suprema">
+            </a>
+        </div>
+        <div class="nav-items">
+            <ul id="nav-items-ul">
+                <li><a class="bottom-line nav-active" href="/index.html">Home</a></li>
+                <li><a class="bottom-line" href="../HTML/products.html">Products</a></li>
+                <li><a class="bottom-line" href="/index.html#categories">Categories</a></li>
+                <li><a class="bottom-line" href="../HTML/about.html">About</a></li>
+                <li><a class="bottom-line" href="../HTML/contact.html">Contact</a></li>
+                <li><a class="bottom-line" href="../HTML/login.html">Login</a></li>
+                <li id="theme-img"><img src="../img/Icons/theme.svg" alt="Change Theme"></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="product-details" id="single-page">
+        <div class="product-img">
+            <div class="small-left" id="small-imgs">
+            </div>
+            <div class="big-img img-div">
+                <img src="" alt="" width="800" height="1024" id="single-product-big-img">
+            </div>
+        </div>
+        <div class="product-content">
+            <div class="single-product-desc">
+                <h2 class="product-desc-text" id="single-product-name"></h2>
+                <h3 class="product-desc-text" id="single-product-price"></h3>
+
+                <div class="star-rating" id="single-product-rating">
+                    <span></span>
+                </div>
+                
+                <div class="product-desc-p">
+                    <p id="single-product-desc"></p>
+                </div>
+            </div>
+            <div class="product-buttons">
+                <div class="quantity-buttons">
+                    <span class="pm-icon" id="minus-btn">
+                        <img src="../img/Icons/minus.svg" alt="">
+                    </span>
+
+                    <input type="text" name="quantity" id="quantity" value="1" data-min="1" data-step="1">
+
+                    <span class="pm-icon" id="plus-btn">
+                        <img src="../img/Icons/plus.svg" alt="">
+                    </span>
+
+                    <div class="addCart-btn">
+                        <a href="" class="cart-btn sqaure-btn">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="wishlist-btn-content">
+                    <a href="" class="wishlist-btn">
+                        <span class="heart">
+                            <img src="../img/Icons/heart.svg" alt="">
+                        </span>
+                        <span class="wish-btn-text">Add To Whislist</span>
+                    </a>
+                </div>
+            </div>
+            <div class="product-others">
+                <span class="type-head">
+                    SKU:
+                    <span class="type-value" id="single-product-sku">
+                        21
+                    </span>
+                </span>
+                <span class="type-head">
+                    Categories:
+                    <span class="type-value">
+                        <a href="" class="td-none pink-hover" id="single-product-categories"></a>
+                    </span>
+                </span>
+                <span class="type-head">
+                    Tags:
+                    <span class="type-value">
+                        <a href="" class="td-none pink-hover" id="single-product-tags"></a>
+                    </span>
+                </span>
+            </div>
+            <div class="dotted-seperator">
+                <span class="seperator">
+                    <span class="seperator-border">
+                        
+                    </span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="tabs-wrapper">
+
+        <div class="wrapper-nav-items">
+            <ul id="wrapper-nav-ul">
+                <li><a id="wrap-desc" class="bottom-line wrapper-a wrap-active" href="">Description</a></li>
+                <li><a id="wrap-ship" class="bottom-line wrapper-a" href="">Shipping</a></li>
+                <li><a id="wrap-info" class="bottom-line wrapper-a" href="">Additional Information</a></li>
+                <li><a id="wrap-reviews" class="bottom-line wrapper-a" href="">Reviews</a></li>
+                <li><a id="wrap-vendor" class="bottom-line wrapper-a" href="">Vendor Info</a></li>
+                <li><a id="wrap-location" class="bottom-line wrapper-a" href="">Location</a></li>
+                <li><a id="wrap-products" class="bottom-line wrapper-a" href="">More Products</a></li>
+                <li><a id="wrap-enquiry" class="bottom-line wrapper-a" href="">Product Enquiry</a></li>
+            </ul>
+        </div>
+        <div class="tabs-wrapper-content">
+            <div id="description-content" class="center-div">
+                <p class="desc-text wrapper-content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Doloribus
+                    quibusdam expedita explicabo itaque, eveniet ducimus eum quo quis at doloremque distinctio cumque
+                    optio
+                    dignissimos ad consequatur libero ipsam beatae a! Minima ex assumenda perspiciatis quae dignissimos
+                    inventore qum.</p>
+            </div>
+
+            <div id="shipping-content" class="center-div">
+                <div class="shipping-desc">
+                    <div class="shipping-text">
+                        <p class="ship-text wrapper-content-text">Ready to ship in 1-2 hours, Chandigarh</p>
+                    </div>
+                    <div class="policy-stuff">
+                        <a href="" class="wrapper-content-text td-none ship-policy pink-hover">Shipping Policy</a>
+                        <p class="wrapper-content-text">ipsum dolor sit amet consectetur adipisicing </p>
+                    </div>
+                    <div class="policy-stuff">
+                        <a href="" class="wrapper-content-text td-none refund-policy pink-hover">Refund Policy</a>
+                        <p class="wrapper-content-text">ipsum dolor sit amet, consectetur adipisicing</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="additional-content" class="center-div">
+                <div class="additional-info">
+                    <div class="info-weight center">
+                        <p class="wrapper-content-text bold">Weight</p>
+                        <p class="wrapper-content-text">500 gm</p>
+                    </div>
+                    <div class="info-dims center">
+                        <p class="wrapper-content-text bold">Dimensions</p>
+                        <p class="wrapper-content-text">120 x 10 x 1 cm</p>
+                    </div>
+                    <div class="info-colors center">
+                        <p class="wrapper-content-text bold">Colors</p>
+                        <p class="wrapper-content-text">Blue, Brown, White</p>
+                    </div>
+                    <div class="info-ship center">
+                        <p class="wrapper-content-text bold">Free Shipping</p>
+                        <p class="wrapper-content-text">For Orders Above ₹500</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="reviews-content" class="center-div">
+
+            </div>
+
+            <div id="vendor-content" class="center-div">
+                <div class="vendor-info">
+                    <div class="info-store center">
+                        <p class="wrapper-content-text bold">Store</p>
+                        <p class="wrapper-content-text">Death Row</p>
+                    </div>
+                    <div class="info-vendor center">
+                        <p class="wrapper-content-text bold">Vendor</p>
+                        <a href="" class="wrapper-content-text td-none pink-hover">Death Row</a>
+                    </div>
+                    <div class="info-address center">
+                        <p class="wrapper-content-text bold">Address</p>
+                        <p class="wrapper-content-text">Sector 10, Chandigarh</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="location-content" class="center-div">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4286.90578659572!2d76.78469796026965!3d30.75140514503706!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed772e16076b%3A0x67e07232738e438f!2sDAV%20College!5e0!3m2!1sen!2sin!4v1650733431107!5m2!1sen!2sin" width="1000" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div id="more-products-content">
+                <div class="related-product-items add-quick-view" id="more-product-items-single">
+                    
+                </div>
+            </div>
+
+            <div id="enquiry-content" class="center-div">
+                <h2 class="wrapper-a">
+                    Product Enquiry </h2>
+                <div class="enquiry-form">
+                    <form action="../HTML/single_product.html/" method="get">
+                        <input type="text" class="form-control" placeholder="Your Name" id="enq-name" name="enq-name">
+                        <input type="text" class="form-control" placeholder="you@example.com" id="enq-email"
+                            name="enq-email">
+                        <textarea name="enq-desc" id="enq-desc" rows="6" class="form-control"
+                            placeholder="Details about your query........."></textarea>
+                        <input type="submit" value="Submit Enquiry" class="sqaure-btn submit-btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="related-products">
+        <div class="related-heading center">
+            <p class="wrapper-a">Related Products</p>
+        </div>
+        <div class="related-product-items add-quick-view" id="related-product-items-single">
+        </div>
+    </div>
+
+    <section class="quick-view">
+        <div class="quick-view-content center-div">
+            <div class="quick-img img-div">
+                <img src="" alt="" width="426" height="545" id="quick-img">
+            </div>
+            <div class="quick-desc-content">
+                <div class="quick-desc">
+                    <div class="single-product-desc">
+                        <h2 class="product-desc-text" id="quick-name"></h2>
+                        <h3 class="product-desc-text" id="quick-price">₹</h3>
+                        <div class="star-rating">
+                            <span></span>
+                        </div>
+                        <div class="product-desc-p">
+                            <p id="quick-desc"></p>
+                        </div>
+                    </div>
+                    <div class="product-buttons">
+                        <div class="quantity-buttons">
+                            <span class="pm-icon" id="minus-btn">
+                                <img src="../img/Icons/minus.svg" alt="">
+                            </span>
+
+                            <input type="text" name="quantity" id="quantity" value="1" data-min="1" data-step="1">
+
+                            <span class="pm-icon" id="plus-btn">
+                                <img src="../img/Icons/plus.svg" alt="">
+                            </span>
+                        </div>
+                        <div class="addCart-btn quick-view-add-cart-btn">
+                            <a href="" class="cart-btn sqaure-btn">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="close-btn">
+                <img src="../img/Icons/cross.svg" alt="Close">
+            </div>
+        </div>
+    </section>
+
+    <script async src="../JS/script.js"></script>
+    <script async src="../JS/API_js.js" type="module"></script>
+    <script async src="../JS/quick_view.js"></script>
+    <script async src="../JS/single_product.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+.about-me{
+    display: flex;
+    align-items: center;
+}
+
+
+.about-img img{
+    width: 40vw;
+    height: 86vh;
+}
+
+.about-content{
+    padding: 0 10%;
+}
+
+
+.about-content .dotted-seperator{
+    margin: 1.7rem 0;
+    width: 60%;
+}
+
+.about-content .about-heading-small{
+    font-family: var(--font2);
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: .02em;
+    line-height: 1.3rem;
+    color: var(--main-color);
+}
+
+.about-content .about-heading-big{
+    font-family: var(--font3);
+    text-transform: uppercase;
+    line-height: 1.16em;
+    font-size: 60px;
+}
+
+.about-desc-p{
+    letter-spacing: .02em;
+    font-family: var(--font2);
+    font-size: 13px;
+    line-height: 22px;
+    color: #333;
+    padding: .5em 0;
+}
+
+.about-social-media{
+    padding: .7rem 0;
+}
+
+.about-social-media .social-media-item{
+    padding: .5em 0;
+}
+
+.social-media-item .social-media-text{
+    color: var(--main-color);
+    font-family: var(--font3);
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+}
+
+.social-media-item .social-media-link{
+    font-family: var(--font2);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22px;
+    text-decoration: none;
+    letter-spacing: .02em;
+    color: #333;
+    padding: 0 1em;
+    transition: all .3s;
+}
+
+.social-media-item .social-media-link:hover{
+    color: var(--main-pink);
+}

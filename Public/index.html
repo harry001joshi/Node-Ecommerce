@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suprema - Shop 'fo You Die</title>
+    <link rel="icon" type="image/x-icon" href="./img/Icons/favicon.png">
+    <link rel="stylesheet" href="./CSS/utils.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="logo">
+            <a href="#">
+                <img src="./img/logo.png" alt="Suprema">
+            </a>
+        </div>
+        <div class="nav-items">
+            <ul id="nav-items-ul">
+                <li><a class="bottom-line nav-active" href="/index.html">Home</a></li>
+                <li><a class="bottom-line" href="./HTML/products.html">Products</a></li>
+                <li><a class="bottom-line" href="/index.html#categories">Categories</a></li>
+                <li><a class="bottom-line" href="./HTML/about.html">About</a></li>
+                <li><a class="bottom-line" href="./HTML/contact.html">Contact</a></li>
+                <li><a class="bottom-line" href="./HTML/login.html">Login</a></li>
+                <li id="theme-img"><img src="./img/Icons/theme.svg" alt="Change Theme"></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="content">
+        <div class="content-desc">
+            <h1 class="content-text text-h1">CELEBRATE THIS SUMMER</h1>
+            <span class="content-text text-span">
+                Get Upto 50% OFF<br>
+            </span>
+            <div class="content-btns">
+                <a class="btn" href="./HTML/products.html#all-products-container">
+                    <span class="btn-text"> View Products </span>
+                    <span class="icon"><img src="./img/Icons/cart.svg" alt=".."></span>
+                </a>
+
+                <a class="btn" href="/index.html#categories">
+                    <span class="btn-text"> View Categories </span>
+                    <span class="icon"><img src="./img/Icons/cart.svg" alt=".."></span>
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+    <section id="categories">
+        <div class="cat-heading">
+            <h3 class="small-label center">Categories</h3>
+        </div>
+        <div class="categories-grid">
+
+            <div class="cat-item">
+                <div class="cat-item-img img-div zoom-img-div">
+                    <a href="./HTML/products.html?categories=women#all-products-container"><img src="./img/Categories/wom.webp" alt="Women" width="310" height="330" id="cat-women"></a>
+                </div>
+                <div class="cat-item-text">
+                    <h2 class="center bold font1">
+                        Women
+                    </h2>
+                </div>
+            </div>
+            <div class="cat-item">
+                <div class="cat-item-img img-div zoom-img-div">
+                    <a href="./HTML/products.html?categories=men#all-products-container"><img src="./img/Categories/men.webp" alt="men" width="310" height="330" id="cat-men"></a>
+                </div>
+                <div class="cat-item-text">
+                    <h2 class="center bold font1">
+                        Men
+                    </h2>
+                </div>
+            </div>
+            <div class="cat-item">
+                <div class="cat-item-img img-div zoom-img-div">
+                    <a href="./HTML/products.html?categories=footwear#all-products-container"><img src="./img/Categories/foot.webp" alt="Footwear" width="310" height="330" id="cat-footwear"></a>
+                </div>
+                <div class="cat-item-text">
+                    <h2 class="center bold font1">
+                        Footwear
+                    </h2>
+                </div>
+            </div>
+            <div class="cat-item">
+                <div class="cat-item-img img-div zoom-img-div">
+                    <a href="./HTML/products.html?categories=accessories#all-products-container"><img src="./img/Categories/acc.webp" alt="Accessories" width="310" height="330" id="cat-acc"></a>
+                </div>
+                <div class="cat-item-text">
+                    <h2 class="center bold font1">
+                        Accessories
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="new-products">
+        <div class="new-prod-heading">
+            <h3 class="small-label center">New products</h3>
+            <h2 class="big-label center">Shop The New Collection</h2>
+        </div>
+
+        <div class="new-product-items  add-quick-view" id="new-products-home">
+
+        </div>
+
+    </section>
+
+    <section class="quick-view">
+        <div class="quick-view-content center-div">
+            <div class="quick-img img-div">
+                <img src="" alt="" width="426" height="545" id="quick-img">
+            </div>
+            <div class="quick-desc-content">
+                <div class="quick-desc">
+                    <div class="single-product-desc">
+                        <h2 class="product-desc-text" id="quick-name"></h2>
+                        <h3 class="product-desc-text" id="quick-price">₹</h3>
+                        <div class="star-rating">
+                            <span></span>
+                        </div>
+                        <div class="product-desc-p">
+                            <p id="quick-desc"></p>
+                        </div>
+                    </div>
+                    <div class="product-buttons">
+                        <div class="quantity-buttons">
+                            <span class="pm-icon" id="minus-btn">
+                                <img src="../img/Icons/minus.svg" alt="">
+                            </span>
+
+                            <input type="text" name="quantity" id="quantity" value="1" data-min="1" data-step="1">
+
+                            <span class="pm-icon" id="plus-btn">
+                                <img src="../img/Icons/plus.svg" alt="">
+                            </span>
+                        </div>
+                        <div class="addCart-btn quick-view-add-cart-btn">
+                            <a href="" class="cart-btn sqaure-btn">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="close-btn">
+                <img src="../img/Icons/cross.svg" alt="Close">
+            </div>
+        </div>
+    </section>
+
+    <section class="shipping">
+
+        <div class="shipping-content">
+            <div class="shipping-text">
+                <h1 class="font1 bold">
+                    Free Shipping World Wide
+                </h1>
+            </div>
+            <div class="shop-now-btn">
+                <a class="sqaure-btn" href="#">
+                    <span class="btn-text font1">Shop Now!</span>
+                </a>
+            </div>
+        </div>
+        <div class="shipping-img">
+            <img src="./img/footer.jpg" alt="Free Shipping World Wide">
+        </div>
+    </section>
+
+    <section class="products-options">
+
+        <div class="featured-products prod-opt-divs">
+            <div class="prod-opt-heading-content">
+                <h3 class="prod-opt-heading">Featured</h3>
+                <span class="line">
+                    <span></span>
+                </span>
+
+            </div>
+            <div class="prod-opt-products" id="featured">
+
+            </div>
+        </div>
+        <div class="sale-products prod-opt-divs">
+            <div class="prod-opt-heading-content">
+                <h3 class="prod-opt-heading">Sale</h3>
+                <span class="line">
+                    <span></span>
+                </span>
+            </div>
+            <div class="prod-opt-products" id="sale">
+            </div>
+        </div>
+
+        <div class="trending-products prod-opt-divs">
+            <div class="prod-opt-heading-content">
+                <h3 class="prod-opt-heading">Trending</h3>
+                <span class="line">
+                    <span></span>
+                </span>
+
+            </div>
+            <div class="prod-trending-img">
+                <img src="./img/Backgrounds/winter_sale.jpg" alt="">
+            </div>
+        </div>
+
+
+    </section>
+
+    <script async src="./JS/script.js"></script>
+    <script async src="./JS/API_js.js" type="module"></script>
+    <script async src="./JS/quick_view.js"></script>
+
+</body>
+
+</html>

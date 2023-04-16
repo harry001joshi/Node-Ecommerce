@@ -1,0 +1,39 @@
+.dashboard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    padding: 2rem 0;
+    width: 50vw;
+}
+
+.form-control{
+    border: 1px solid;
+    height: 50px;
+}
+
+.two-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+.single-check{
+    margin-top: 1rem;
+}
+
+input[type="checkbox"]{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.single-check label{
+    font-size: 18px;
+    font-family: var(--font1);
+    font-weight: 500;
+}
+
+.choose-img{
+    margin-top: 2rem;
+}

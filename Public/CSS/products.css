@@ -1,0 +1,125 @@
+.content::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--prod-back) no-repeat center center/cover;
+    background-position: center 0;
+    z-index: -1;
+    max-height: 90vh;
+}
+
+.content-desc .content-text {
+    color: var(--main-white) !important;
+}
+
+/*___________________________________Products grid_______________________*/
+
+#products {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.filter-options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3rem;
+    width: 80vw;
+}
+
+
+.filters-form-name {
+    display: flex;
+    width: 40vw;
+}
+
+.price-slider {
+    display: none;
+    position: relative;
+    height: 5px;
+    background-color: #f6dada;
+    margin-right: 13px;
+    margin-top: 20px;
+}
+
+.price-slider .to-slide{
+    position: absolute;
+    display: block;
+    height: 100%;
+    background-color: #e08686;
+    z-index: 1;
+    left: 0;
+    width: 100%;
+}
+
+.price-slider .slide-handle{
+    position: absolute;
+    top: -5px;
+    height: 14px;
+    width: 14px;
+    background-color: #000;
+    margin: 0 0 0 -1px;
+    cursor: pointer;
+    outline: medium none;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.price-slider .slide-handle::after{
+    background-color: #fff;
+    content: '';
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    border-radius: 50%;
+}
+
+.filters-form-price input[type=submit] {
+    padding: 10px 25px !important;
+}
+
+.filters-form-price .price-range-tags {
+    font-family: var(--font2);
+    font-size: 13px;
+    line-height: 22px;
+    color: #333;
+    margin-right: 3rem;
+    display: inline-block;
+}
+
+.price-range-tags .from,
+.price-range-tags .to {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    display: inline-block;
+    width: 35px;
+}
+
+.price-range-tags .sep{
+    padding-right: 30px;
+}
+
+.filter-form-control {
+    height: 50px;
+    margin-top: 0;
+    margin-right: 1.5rem;
+}
+
+.filters-form-name input[type=submit] {
+    margin: 0;
+    height: 50px;
+}
+
+.all-product-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 2rem;
+    margin: 3em 8em;
+}

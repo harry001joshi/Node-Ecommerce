@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suprema - Shop 'fo You Die</title>
+    <link rel="icon" type="image/x-icon" href="../img/Icons/favicon.png">
+    <link rel="stylesheet" href="../CSS/utils.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/dashboard.css">
+</head>
+
+<body>
+    <div class="dashboard">
+        <form>
+            <div class="two-grid">
+                <input type="text" placeholder="Name *" id="product-name" autofill="off" class="form-control">
+                <input type="text" placeholder="Price *" id="product-price" autofill="off" class="form-control">
+            </div>
+            <input type="text" placeholder="Description *" id="product-desc" autofill="off" class="form-control">
+            <div class="two-grid">
+                <input type="text" placeholder="Categories (comma seperated ,) *" id="product-categories" autofill="off"
+                    class="form-control">
+                <input type="text" placeholder="tags (comma seperated ,) optional" id="product-tags" autofill="off"
+                    class="form-control">
+            </div>
+            <div class="two-grid">
+                <input type="text" placeholder="Inventory" id="product-inventory" autofill="off" class="form-control">
+                <input type="text" placeholder="rating" id="product-rating" autofill="off" class="form-control">
+            </div>
+            <div class="two-grid">
+                <div class="single-check">
+                    <input type="checkbox" id="product-featured" value="Featured" name="featured">
+                    <label for="featured" class="wrapper-a">Featured</label>
+                </div>
+                <div class="single-check">
+                    <input type="checkbox" id="product-sale" value="Sale" name="sale">
+                    <label for="sale" class="wrapper-a">sale</label>
+                </div>
+            </div>
+            <div class="two-grid">
+                <input type="file" id="product-image" accept="image/*" class="choose-img">
+                <input type="text" placeholder="Image Name (Not absolute path)" id="product-img" autofill="off"
+                    class="form-control">
+            </div>
+            <input type="file" id="product-small-images" accept="image/*" multiple class="choose-img">
+            <input type="text" placeholder="Image names (comma seperated ,)" id="product-small-imgs" autofill="off"
+                class="form-control">
+
+            <input type="submit" , value="Create Product" class="sqaure-btn submit-btn" id="product-submit">
+        </form>
+    </div>
+    <script src="../JS/dashboard.js"></script>
+</body>
+
+</html>

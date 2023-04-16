@@ -1,0 +1,47 @@
+.page-not-found{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px 0;
+}
+
+
+.pnf-title{
+    font-size: 120px;
+    color: #000;
+    font-family: var(--font3);
+    line-height: 1.1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.pnf-sub-title{
+    margin-top: 35px;
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.25em;
+    font-size: 80px;
+    font-family: var(--font3);
+}
+
+.pnf-desc{
+    margin: 10px 0;
+    letter-spacing: .02em;
+    text-align: center;
+    font-size: 13px;
+    font-family: var(--font2);
+    line-height: 22px;
+}
+
+.go-to-home-btn{
+    line-height: 1.3rem;
+    margin: 20px 0;
+}
+
+.go-to-home-btn a{
+    text-decoration: none;
+    color: #fff;
+}

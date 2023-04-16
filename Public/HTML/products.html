@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suprema - Shop 'fo You Die</title>
+    <link rel="icon" type="image/x-icon" href="../img/Icons/favicon.png">
+    <link rel="stylesheet" href="../CSS/utils.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/products.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="logo">
+            <a href="/index.html">
+                <img src="../img/logo.png" alt="Suprema">
+            </a>
+        </div>
+        <div class="nav-items">
+            <ul id="nav-items-ul">
+                <li><a class="bottom-line" href="/index.html">Home</a></li>
+                <li><a class="bottom-line  nav-active" href="../HTML/products.html">Products</a></li>
+                <li><a class="bottom-line" href="/index.html#categories">Categories</a></li>
+                <li><a class="bottom-line" href="../HTML/about.html">About</a></li>
+                <li><a class="bottom-line" href="../HTML/contact.html">Contact</a></li>
+                <li><a class="bottom-line" href="../HTML/login.html">Login</a></li>
+                <li id="theme-img"><img src="../img/Icons/theme.svg" alt="Change Theme"></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="content">
+        <div class="content-desc">
+            <h1 class="content-text text-h1">SHOP THE NEW COLLECTION</h1>
+            <span class="content-text text-span">
+                Get Upto 50% OFF<br>
+            </span>
+            <div class="content-btns">
+                <a class="btn" href="../HTML/products.html#all-products-container">
+                    <span class="btn-text"> View Products </span>
+                    <span class="icon"><img src="../img/Icons/cart.svg" alt="..."></span>
+                </a>
+
+                <a class="btn" href="/index.html#categories">
+                    <span class="btn-text"> View Categories </span>
+                    <span class="icon"><img src="../img/Icons/cart.svg" alt="..."></span>
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+
+    <section id="products">
+        <div class="cat-heading">
+            <h3 class="bold font1 center">New Arrivals</h3>
+            <h1 class="bold font1 center">Shop The New Collection</h1>
+        </div>
+        <div class="filter-options">
+            <form class="filters-form-price" autocomplete="off">
+                <h3 class="wrapper-a">Filter By Price</h3>
+
+                <div class="price-slider">
+                    <div class="to-slide">
+
+                    </div>
+                    <span tabindex=0 class="slide-handle" style="left: 0%;">
+
+                    </span>
+                    <span tabindex=0 class="slide-handle" style="left: 100%;">
+
+                    </span>
+                </div>
+
+                <div class="price-btns">
+                    <div class="price-range-tags">
+                        Price:
+                        ₹
+                        <input type="text" class="from" value="20" id="min-price">
+                        </input>
+                        <span class="sep">--</span>
+                        ₹
+                        <input type="text" class="to" value="500" id="max-price">
+                        </input>
+                    </div>
+                    <input value="Filter" type="submit" class="sqaure-btn submit-btn" id="price-submit">
+                </div>
+            </form>
+            <form method="get" class="filters-form-name" action="../HTML/products.html" autocomplete="off">
+                <input type="text" class="filter-form-control form-control" placeholder="Search Products"
+                    id="search-product" name="name" autocomplete="off">
+
+                <input type="submit" value="Search" class="sqaure-btn submit-btn" autocomplete="off">
+            </form>
+
+        </div>
+        <div class="all-product-items add-quick-view" id="all-products-container">
+        </div>
+
+    </section>
+
+    <section class="quick-view">
+        <div class="quick-view-content center-div">
+            <div class="quick-img img-div">
+                <img src="" alt="" width="426" height="545" id="quick-img">
+            </div>
+            <div class="quick-desc-content">
+                <div class="quick-desc">
+                    <div class="single-product-desc">
+                        <h2 class="product-desc-text" id="quick-name"></h2>
+                        <h3 class="product-desc-text" id="quick-price">₹</h3>
+                        <div class="star-rating">
+                            <span></span>
+                        </div>
+                        <div class="product-desc-p">
+                            <p id="quick-desc"></p>
+                        </div>
+                    </div>
+                    <div class="product-buttons">
+                        <div class="quantity-buttons">
+                            <span class="pm-icon" id="minus-btn">
+                                <img src="../img/Icons/minus.svg" alt="">
+                            </span>
+
+                            <input type="text" name="quantity" id="quantity" value="1" data-min="1" data-step="1">
+
+                            <span class="pm-icon" id="plus-btn">
+                                <img src="../img/Icons/plus.svg" alt="">
+                            </span>
+                        </div>
+                        <div class="addCart-btn quick-view-add-cart-btn">
+                            <a href="" class="cart-btn sqaure-btn">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="close-btn">
+                <img src="../img/Icons/cross.svg" alt="Close">
+            </div>
+        </div>
+    </section>
+
+    <section class="shipping">
+
+        <div class="shipping-content">
+            <div class="shipping-text">
+                <h1 class="font1 bold">
+                    Free Shipping World Wide
+                </h1>
+            </div>
+            <div class="shop-now-btn">
+                <a class="sqaure-btn" href="#">
+                    <span class="btn-text font1">Shop Now!</span>
+                </a>
+            </div>
+        </div>
+        <div class="shipping-img">
+            <img src="../img/footer.jpg" alt="Free Shipping World Wide">
+        </div>
+    </section>
+    <script async src="../JS/script.js"></script>
+    <script async src="../JS/API_js.js" type="module"></script>
+    <script async src="../JS/quick_view.js"></script>
+
+</body>
+
+</html>

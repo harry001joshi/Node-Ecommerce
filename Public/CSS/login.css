@@ -1,0 +1,117 @@
+.content::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('../img/Backgrounds/login.jpg') no-repeat center center/cover;
+
+    background-position: center 0;
+    z-index: -1;
+    max-height: 60vh;
+}
+.content{
+    max-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-desc{
+    position: static;
+}
+
+.login-register{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 4rem;
+}
+
+.login-register .form-control{
+    border: 1px solid rgb(139, 133, 133);
+}
+
+.login-form{
+    width: 40vw;
+    height: 45vh;
+}
+
+.register-form{
+    width: 40vw;
+    height: 45vh;
+}
+
+.login-text{
+    font-family: var(--font1);
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.remember-me{
+    margin-left: 0;
+    display: block;
+    margin-top: 17px;
+    position: relative;
+}
+
+.remember-me::before{ /* adding the empty grey square box where tick will occur*/
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    background: 0 0;
+    content: "";
+    visibility: visible;
+    border: 1px solid #c6c6c6;
+
+}
+
+.remember-me::after{
+    content: '\f00c';
+    font-family: "Font Awesome 5 Free";
+    width: 9px;
+    height: 5px;
+    position: absolute;
+    font-weight: 900;
+    top: 6px;
+    left: 3px;
+    border-top: none;
+    border-right: none;
+    background: 0 0;
+    opacity: 0;
+    visibility: visible;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.checkbox-checked::after{
+    opacity: 1;
+}
+
+.remember-me input[type="checkbox"]{
+    visibility: hidden;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin: 0 9px 0 0;
+    vertical-align: middle;
+}
+
+.remember-me-text{
+    font-family: var(--font1);
+    font-size: 13px;
+    position: relative;
+    top: 4px;
+}
+
+.lost-password{
+    font-family: var(--font1);
+    font-size: 1rem;
+    float: right;
+    position: relative; 
+    top: 10px;
+    color: var(--main-black);
+}
